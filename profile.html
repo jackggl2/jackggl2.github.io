@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Hồ sơ cá nhân</h1>
+        <p>Chào mừng đến với trang cá nhân của tôi!</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">Giới thiệu</a> |
+        <a href="#contact">Liên hệ</a> |
+        <a href="#hobbies">Sở thích</a> |
+        <a href="#skills">Kỹ năng</a> |
+        <a href="#schedule">Thời khóa biểu</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <!-- PROFILE -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+
+            <img src="avatar.jpg"
+                 alt="Ảnh đại diện"
+                 width="150">
+
+            <h3>Họ và tên: Nguyễn Văn A</h3>
+
+            <p>
+                Xin chào! Tôi là sinh viên ngành Công nghệ thông tin.
+                Tôi yêu thích lập trình, thiết kế và sáng tạo.
+                Tôi luôn mong muốn học hỏi những kiến thức mới
+                và phát triển bản thân.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT INFORMATION -->
+        <section id="contact">
+            <h2>Thông tin liên hệ</h2>
+
+            <ul>
+                <li>Email: example@gmail.com</li>
+                <li>Số điện thoại: 0123456789</li>
+                <li>Địa chỉ: TP. Hồ Chí Minh</li>
+            </ul>
+
+            <p>
+                Facebook:
+                <a href="https://facebook.com/"
+                   target="_blank">Facebook cá nhân</a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/"
+                   target="_blank">GitHub cá nhân</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- HOBBIES -->
+        <section id="hobbies">
+            <h2>Sở thích</h2>
+
+            <ul>
+                <li>Vẽ tranh và thiết kế đồ họa</li>
+                <li>Lập trình</li>
+                <li>Chơi trò chơi điện tử</li>
+                <li>Đọc truyện và sáng tác</li>
+                <li>Học ngoại ngữ</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Kỹ năng</h2>
+
+            <ul>
+                <li>HTML cơ bản</li>
+                <li>CSS cơ bản</li>
+                <li>C++ cơ bản</li>
+                <li>Sử dụng Microsoft Office</li>
+                <li>Làm việc nhóm</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- TIMETABLE -->
+        <section id="schedule">
+            <h2>Thời khóa biểu</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Thứ 2</th>
+                    <th>Thứ 3</th>
+                    <th>Thứ 4</th>
+                    <th>Thứ 5</th>
+                    <th>Thứ 6</th>
+                </tr>
+
+                <tr>
+                    <td>7:00 - 9:00</td>
+                    <td>Lập trình</td>
+                    <td>Toán</td>
+                    <td>HTML</td>
+                    <td>Tiếng Anh</td>
+                    <td>Toán</td>
+                </tr>
+
+                <tr>
+                    <td>9:00 - 11:00</td>
+                    <td>Toán</td>
+                    <td>Lập trình</td>
+                    <td>Triết học</td>
+                    <td>HTML</td>
+                    <td>Tự học</td>
+                </tr>
+
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Tự học</td>
+                    <td>Tiếng Anh</td>
+                    <td>Thể dục</td>
+                    <td>Tự học</td>
+                    <td>Làm bài tập</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT FORM -->
+        <section>
+            <h2>Gửi lời nhắn cho tôi</h2>
+
+            <form action="#" method="post">
+
+                <article>
+                    <label for="name">Họ và tên:</label><br>
+                    <input type="text" id="name"
+                           name="name" required>
+                </article>
+
+                <br>
+
+                <article>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email"
+                           name="email" required>
+                </article>
+
+                <br>
+
+                <article>
+                    <label for="message">Nội dung:</label><br>
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              cols="40"
+                              required></textarea>
+                </article>
+
+                <br>
+
+                <button type="submit">Gửi liên hệ</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 Nguyễn Văn A. All rights reserved.</p>
+        <p>Personal Profile Website</p>
+    </footer>
+
+</body>
+</html>

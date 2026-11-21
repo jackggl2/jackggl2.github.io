@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+ <html lang="en">
+
+ <head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ho ca</title>
+
+<link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+
+<style>
+
+.aquarium{
+position: fixed; bottom: 0; height: 75%; width: 98%;
+background-image:url("aquarium.jfif");
+background-size: cover;
+border: 2px double blue;
+border-top: 0;
+}
+.fishmover{
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation: swim 4s linear infinite alternate;
+  transform-origin: center;
+}
+.fish {
+  width: 100%;
+  display: block;
+  animation: turn 8s steps(1, end) infinite;
+}
+@keyframes swim {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 25%);
+  }
+}
+
+@keyframes turn {
+  
+  0%, 44% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+ 
+  48% {
+    transform: scaleX(0.7) scaleY(1.2);
+  }
+
+  
+  50% {
+    transform: scaleX(-0.7) scaleY(1.2);
+  }
+
+  
+  54% {
+    transform: scaleX(-1.1) scaleY(0.9);
+  }
+
+  58%, 94% {
+    transform: scaleX(-1) scaleY(1);
+  }
+
+  /* Squish before turning back */
+  98% {
+    transform: scaleX(-0.7) scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+</style>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="text-primary"></div>
+
+<div img src="aquarium.jfif" class="aquarium">
+<div class="fishmover">
+  <img src="fish.png" class="fish" alt="Swimming fish">
+</div>
+<div id=" "></div>
+
+</body>
+</html>
