@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+  </head>
+
+  <body>
+<form action="xulydangky.php"   method="post" enctype="multipart/form-data">
+<caption>ĐĂNG KÝ THÀNH VIÊN</caption>
+
+<table>
+<tr>
+<td>Họ tên</td>
+<td>
+<input name="hoten" />
+</td>
+</tr>
+
+<tr>
+ <td>mật khẩu</td>
+ <td>
+    <input type="password"
+    name="mật khẩu"/>
+
+ </td>
+</tr>
+
+<tr>
+  <td>nghề nghiệp</td>
+    <td>
+    <select name="nghenghiep">
+        <option value="HSSV">hoc sinh</option>
+        <option value="GV">giáo viên</option>
+        <option value="BS">bác sĩ</option>
+    </select>
+ </td>
+</tr>
+
+<tr>
+  <td>giới tính</td>
+    <td>
+        <input type="radio" name="gender" value="male"> Nam
+        <input type="radio" name="gender" value="female"> Nữ
+        <input type="radio" name="gender" value="non-binary"> Non-binary
+        <input type="radio" name="gender" value="other"> Khác
+        <input type="radio" name="gender" value="prefer-not-to-say" checked> Không muốn trả lời
+    
+ </td>
+</tr>
+
+<tr>
+  <td>ngoại ngữ</td>
+    <td>
+         <input type="checkbox" name="ngoaingu" value="AV"> anh văn
+         <input type="checkbox" name="ngoaingu" value="SP"> nga
+         <input type="checkbox" name="ngoaingu" value="SW"> thụy điển
+         <input type="checkbox" name="ngoaingu" value="FR"> pháp
+    
+ </td>
+</tr>
+
+<tr>
+  <td>hình</td>
+    <td>
+         <input type="file" name="hinh"/>
+ </td>
+</tr>
+ 
+<tr>
+  <td>sở thích</td>
+    <td>
+         <textarea rows="5" cold="100"></textarea>
+ </td>
+</tr>
+
+<tr>
+<td colspan="2">
+     <button 
+     type="submit">Đăng ký</button>
+     <button
+        type="reset">nhập lại
+     </button>
+</td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

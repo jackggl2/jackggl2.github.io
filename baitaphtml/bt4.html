@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+
+        input:valid{
+            border: 1px solid green;
+        }
+        input:invalid{
+            border: 1px solid red;
+        }
+        input:out-of-range{
+            text-shadow: 2px 0px 0px yellow;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <form>
+        <h2>demo validation</h2>
+        ho ten:
+        <input type="text" minlength="3" maxlength="50"/>
+        <br>
+        email:
+        <input type="email" required/>
+        <br>
+        Tuổi:
+        <input type="number" min="18" max="70"/>
+        <br>
+        trang web:
+        <input type="url" pattern="https?://.+"/>
+        <br>
+        di động:
+        <input type="text" pattern="(\+84|0)[9875]\d{8}"/>
+        <br>
+        mau (#rrggbb/#rgb):
+        <input type="text" pattern="^#([a - f0 -9]{6}|[a - f0 -9]{3})$"/>
+        <br>
+        <button>SEND</button>
+
+
+
+    </form>
+   
+</body>
+
+
+
+</html>
